@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Wiebke Schaal</h1>
+        <nav>
+            <a href="#hero">Start</a>
+            <a href="#about">Über mich</a>
+            <a href="#works">Projekte</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>3D Artist & Game Design Student</h2>
+        <p>Willkommen in meiner digitalen Welt</p>
+        <button onclick="scrollToSection('works')">Meine Arbeiten</button>
+    </section>
+
+    <section id="about">
+        <h2>Über mich</h2>
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="img/mein_Bild.JPEG" alt="Foto von Wiebke Schaal">
+            </div>
+
+            <div class="about-text">
+
+                <br>
+
+                <p>
+                    Hallo!
+                </p>
+                <p>
+                    Mein Name ist Wiebke Schaal,
+                    zur Zeit bin ich Studentin an der Technischen Hochschule Mittelhessen
+                    und bin dabei meinen Bachelor in Medieninformatik mit dem Schwerpunkt Medienproduktion zu machen.
+                </p>
+                <p>
+                    Ich habe mich schon seit ich klein war für Games, Animationen und Kunst interessiert und wusste schon damals,
+                    dass ich gerne in diese Richtung gehen möchte. Durch mein aktuelles Studium konnte ich schon in viele Bereiche der 3D Art
+                    rein schauen und meine Fähigkeiten erweitern. Dabei habe ich unter anderem Erfahrungen
+                    in 3D-Modellierung, UV-Mapping, Shading, Rigging, Animation, Lighting und Motion Design gesammelt.
+                </p>
+                <p>
+                    Für meine Projekte habe ich unter anderem schon mit Autodesk Maya, Autodesk Mudbox, Blender, Unreal Engine, Unity,
+                    Terragen, Golaem, V-Ray und Clip Studio Paint gearbeitet.
+                </p>
+
+
+    </section>
+
+
+    <section id="works">
+        <h2>Meine 3D Arbeiten</h2>
+        <div class="gallery">
+            <div class="card" onclick="openProject(
+        'img',
+        'img/Lost_city.png',
+        'Lost City',
+        '3D Environment',
+        'Erstellung eines 3D-Environments mit Fokus auf Shading und Lighting.',
+        'Autodesk Maya, V-Ray'
+    )">
+                <img src="img/Lost_city.png">
+                <span>Lost City</span>
+            </div>
+
+
+            <div class="card" onclick="openProject(
+        'img',
+        'img/Final_WOW_02.jpg',
+        'Lost Temple',
+        '3D Environment',
+        'Erstellung eines 3D-Enviroments mit Fokus auf Shading und Lighting.',
+        'Autodesk Maya, V-Ray'
+    )">
+                <img src="img/Final_WOW_02.jpg">
+                <span>Lost Temple</span>
+            </div>
+
+
+            <div class="card" onclick="openProject(
+        'video',
+        'videos/final_game_speed_run.mp4',
+        'Flooded Grounds Game',
+        'Game Development',
+        'Entwicklung eines eigenen kleinen Spiels mit 3D-Assets, Animationen und Gameplay-Elementen.',
+        'Unity'
+    )">
+                <video src="videos/final_game_speed_run.mp4" controls></video>
+                <span>Flooded Grounds Game</span>
+            </div>
+
+
+            <div class="card" onclick="openProject(
+        'img',
+        'img/04.png',
+        'Airship',
+        '3D Modeling',
+        'Erstellung eines 3D-Enviroments mit Fokus auf Modellieren, Shading und Lightning.',
+        'Autodesk Maya, V-Ray'
+    )">
+                <img src="img/04.png">
+                <span>Airship</span>
+            </div>
+
+
+            <div class="card" onclick="openProject(
+        'img',
+        'img/Cave.jpg',
+        'Cave',
+        '3D Environment',
+        'Erstellung eines 3D-Enviroments mit Fokus auf FX, MASH, Shading und Lighting.',
+        'Autodesk Maya,V-Ray, MASH'
+    )">
+                <img src="img/Cave.jpg">
+                <span>Cave</span>
+            </div>
+
+
+            <div class="card" onclick="openProject(
+        'video',
+        'videos/Terragen.mp4',
+        'Yellowstone',
+        'Environment',
+        'Environment Erstellung mit Terragen.',
+        'Terragen, Autodesk Maya'
+    )">
+                <video src="videos/Terragen.mp4" controls></video>
+                <span>Yellowstone</span>
+            </div>
+
+
+            <div class="card" onclick="openProject(
+        'img',
+        'img/05_final.jpg',
+        'BMW Night',
+        '3D Modeling & Lighting',
+        'Fokus auf Modellierung, Shading und Lighting.',
+        'Autodesk Maya'
+    )">
+                <img src="img/05_final.jpg">
+                <span>BMW Night</span>
+            </div>
+
+
+            <div class="card" onclick="openProject(
+        'img',
+        'img/Car_Model.jpg',
+        'BMW Day',
+        '3D Modeling',
+        'Fokus auf Modellierung, Shading und Lighting.',
+        'Autodesk Maya'
+    )">
+                <img src="img/Car_Model.jpg">
+                <span>BMW Tunnel</span>
+            </div>
+
+
+            <div class="card" onclick="openProject(
+        'video',
+        'videos/Trails.mov',
+        'Dancer',
+        'Motion Design',
+        'Motion-Design-Projekt mit Fokus auf Animation und Bewegung.',
+        'Autodesk Maya, MASH'
+    )">
+                <video src="videos/Trails.mp4" controls></video>
+                <span>Dancer</span>
+            </div>
+
+
+            <div class="card" onclick="openProject(
+        'video',
+        'videos/Face_Animation.mp4',
+        'Face Animation',
+        'Character Animation',
+        'Animation eines Gesichts mit Fokus auf Mimik und Bewegung.',
+        'Autodesk Maya'
+    )">
+                <video src="videos/Face_Animation.mp4" controls></video>
+                <span>Face Animation</span>
+            </div>
+
+            <div class="card" onclick="openProject(
+    'video',
+    'videos/Mission_to_Minerva.mp4',
+    'Animation',
+    'Trailer',
+    'Erstellter Trailer als Gruppenprojekt in der Hochschule mit Fokus auf Projekt-Management, Shading, Rigging, Animation, Lighting, Compositing und Rendering.',
+    'Autodesk Maya, Davinci Resolve'
+)">
+                <video src="videos/Mission_to_Minerva.mp4" controls></video>
+                <span>Mission to Minerva</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+
+    </section>
+    <div id="projectModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close" onclick="closeProject()">×</button>
+
+            <div class="modal-media" id="modalMedia"></div>
+
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
+
+                <h3 id="modalCategory"></h3>
+
+                <p id="modalDescription"></p>
+
+                <p class="software">
+                    <strong>Software:</strong>
+                    <span id="modalSoftware"></span>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <section id="contact">
+    </section>
+
+    <footer>
+        <p>© 2026 – Wiebke Schaal</p>
+    </footer>
+
+
+    <div id="imageFullscreen" class="image-fullscreen">
+
+        <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
+
+        <img id="fullscreenImage" src="" alt="">
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
